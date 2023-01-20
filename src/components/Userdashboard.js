@@ -19,9 +19,7 @@ import dash from './dash.png'
 import Dpp from './Dpp'
 import Spinner from './Spinner'
 function Userdashboard() {
-  const handlechangee=()=>{
-   
-  }
+ 
   let navigate=useNavigate()
   
   const [value, onChange1] = useState(new Date());
@@ -200,7 +198,7 @@ console.log(window.webkitURL.createObjectURL(curfile[0]))
                    }):<Dpp/>}</div>
                    <div style={{display:"flex",flexDirection:"column",marginLeft:"2em",width:"172px"}}>
               <FileBase type="file" id="fileupload"  multiple={false} onDone={( base64 ) => setDp(base64.base64)} />
-              <input type="file" name="fileo" id="fileo" accept=".jpg, .jpeg, .png" multiple onChange={()=>{handlechangee()}}/>
+          
              <br />
               <div>
                 
